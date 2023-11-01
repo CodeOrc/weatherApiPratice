@@ -1,4 +1,4 @@
-import { dateFormat } from "../public/scripts/weatherUtilities";
+import { dateFormat } from "../scripts/weatherUtilities";
 
 export default function WeatherCard({ date, PoP12h, Wx, wxIcon, MinT, MaxT }) {
   return (

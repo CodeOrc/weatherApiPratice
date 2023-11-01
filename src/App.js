@@ -1,8 +1,8 @@
 import "./styles.css";
 import { useState, useEffect } from "react";
-import WeatherCard from "../Components/WeatherCard";
-import { getOneDayWeatherByLocation } from "../public/scripts/weatherUtilities";
-import locations from "../public/data/locations";
+import WeatherCard from "./Components/WeatherCard";
+import { getOneDayWeatherByLocation } from "./scripts/weatherUtilities";
+import locations from "./data/locations";
 
 export default function App() {
   const [location, setLocation] = useState("臺北市");
