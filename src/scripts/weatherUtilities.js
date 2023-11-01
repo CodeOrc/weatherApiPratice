@@ -114,9 +114,6 @@ const getOneDayWeatherByLocation = async (location, setState) => {
           }
         };
 
-        console.log(weatherElements);
-        console.log(data);
-
         setState(data);
       }
     });
