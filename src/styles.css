@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap");
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+body {
+  background-color: #ccc;
+}
+.main-title {
+  text-align: center;
+  font-family: "Noto Sans TC", sans-serif;
+  width: 100%;
+}
+.weather-select {
+  width: 200px;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 8px;
+  border-style: none;
+  margin-top: 20px;
+}
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.card-container {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  gap: 10px 20px;
+}
+.weather-card {
+  font-family: "Noto Sans TC", sans-serif;
+  font-weight: 500;
+  min-width: 250px;
+  min-height: 250px;
+  background-color: white;
+  border-radius: 10%;
+  box-shadow: 0 5px 5px gray;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.weather-icon {
+  width: 100px;
+  height: 100px;
+}
+.weather-date {
+  font-size: 22px;
+  width: 100%;
+  margin-bottom: 4px;
+}
+.weather-desc {
+  font-size: 16px;
+  width: 100%;
+}
+
+.weather-temp {
+  color: rgb(255, 175, 65);
+  font-weight: 900;
+  font-size: 20px;
+  width: 100%;
+}
+.weather-pop {
+  color: rgb(105, 105, 230);
+  font-weight: 900;
+  font-size: 16px;
+  width: 100%;
+}
