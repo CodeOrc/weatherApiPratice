@@ -1,8 +1,8 @@
 import "./styles.css";
 import { useState, useEffect } from "react";
 import WeatherCard from "./Components/WeatherCard";
+import LocationSelect from "./Components/LocationSelect";
 import { getOneDayWeatherByLocation } from "./scripts/weatherUtilities";
-import locations from "./data/locations";
 
 export default function App() {
   const [location, setLocation] = useState("臺北市");
@@ -20,16 +20,8 @@ export default function App() {
         <h1 className="main-title">地區天氣</h1>
         <div className="card-container">
           {data && <WeatherCard {...data.elements} />}
-        </div>{" "}
-        <select
-          className="weather-select"
-          value={location}
-          onChange={handleLocationChange}
-        >
-          {locations.map((v) => {
-            return <option value={v}>{v}</option>;
-          })}
-        </select>
+        </div>
+        <LocationSelect value={location} onChange={handleLocationChange} />
       </div>
     </div>
   );
